@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const userDetails = ()=>{
+            let user =document.getElementById("uname").value;
+            let pwd= document.getElementById("upwd").value;
+            alert("Entered details\n Username:"+user+"\nPassword:"+pwd);
+        }
+    </script>
+    <style>
+        div{
+            margin: 20%;
+            padding: 10px;
+        }
+        p{
+            display: inline-block;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <p>UserName:<input id="uname" type="text", placeholder="Enter Username"/></p><br/>
+    <p>Password:<input id="upwd"type="password", placeholder="Enter the password"/></p><br/>
+    <button onclick="userDetails()" id="btn1">Submit</button>
+</div> 
+</body>
+</html>
