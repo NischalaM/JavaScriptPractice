@@ -61,7 +61,7 @@ console.log("Size of an Array: " + employees.length);
 
 // ---------------------------Converting string to array----------------------------------------------------------------------------
 
-let str = "this takes a single parameter, the character you want to separate the string ";
+let str = "This takes a single parameter, the character you want to separate the string ";
 let strarr = str.split(" ");
 console.log(strarr.length + "--" + strarr);
 
