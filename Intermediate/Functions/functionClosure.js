@@ -1,16 +1,16 @@
 // Initiate counter
-let counter = 0;
+
 
 // Function to increment counter
 function add() {
   let counter = 0;
-    counter += 1;
-    console.log(counter);
+  return function Counter() {
+    counter += 2;
+    console.log(`The counter is : ${counter}`);
+  }   
+}
+let res = add();
+for(let i=0; i<5; i++){
+  res();
 }
 
-// Call add() 3 times
-add();
-add();
-add();
-
-// The counter should now be 3. But it is 0
