@@ -1,3 +1,10 @@
+// Objects are variables too, but it contains multiple values.
+// Objects can be declared in 3 ways:
+// 1. Object Literal
+// 2. Object Constructor
+// 3. using new keyword
+// *************************************************************
+// 1. Object Literal:
 const person = {
   firstName: "John",
   lastName: "Doe",
@@ -7,13 +14,14 @@ const person = {
   }
 }; 
 console.log(person.fullName());
-//Display properties using loop
 
-const employee = {
-    emp_fname: "Nischala",
-    emp_lname: "Matcha",
-    department:"testing"
-}
+//Display properties using loop
+// 2. Using new keyword:
+const employee = new Object();
+employee.emp_fname = "Nischala";
+employee.emp_lname = "Matcha";
+employee.department = "testing";
+
 
 for (let emp in employee)
 {
